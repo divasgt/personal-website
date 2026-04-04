@@ -66,6 +66,7 @@ export default function ThemeToggle() {
       <button
         onClick={handleClick}
         className="flex cursor-pointer items-center justify-center p-1 opacity-40 transition-opacity duration-100 hover:opacity-80"
+        aria-label="Theme toggle button."
       >
         {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
       </button>
