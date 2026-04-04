@@ -2,64 +2,103 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="min-h-screen flex flex-col items-center pt-20 mx-5">
+      <div className="max-w-lg md:max-w-2xl">
+        <section id="about">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-8">
+            Divas Verma
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="md:text-lg text-secondary">
+            I'm a full-stack web developer based in Delhi NCR, India. <br /> I
+            enjoy building clean, minimal web interfaces that actually feel good
+            to use.
+            <br /> I recently graduated with a bachelors degree in computer
+            science from MAIT, Delhi in May 2025.
+            <br /> <br />
+            My goal is to use my technical skills to build projects which have
+            real world impact in solving problems, making lives better and
+            reduce suffering from this world.
+            <br /> <br />
+            In my other time I like to gain world-knowledge, self-knowledge,
+            philosophy through books and videos, watch youtube, go running, do
+            calisthenics, play badminton.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+        </section>
+
+        <div className="my-40" />
+
+        <section id="projects">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-10">
+            Projects
+          </h1>
+
+          <div className="border-2 border-neutral-500/20 hover:border-neutral-500/40 rounded-md flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div className="px-5 py-4 space-y-3">
+              <h2 className="text-lg md:text-xl font-semibold tracking-tight">
+                NextWatch
+              </h2>
+              <p className="text-secondary">
+                One-Stop website for Cinema Enthusiasts, featuring AI-powered
+                chat and recommendations.
+              </p>
+
+              <div className="text-secondary text-sm font-light flex flex-wrap gap-2 select-none">
+                <span className="border border-neutral-300/20 rounded-md px-1.75 py-0.75">
+                  Next.js
+                </span>
+                <span className="border border-neutral-300/20 rounded-md px-1.75 py-0.75">
+                  React.js
+                </span>
+                <span className="border border-neutral-300/20 rounded-md px-1.75 py-0.75">
+                  TypeScript
+                </span>
+                <span className="border border-neutral-300/20 rounded-md px-1.75 py-0.75">
+                  Tailwind CSS
+                </span>
+                <span className="border border-neutral-300/20 rounded-md px-1.75 py-0.75">
+                  Supabase
+                </span>
+                <span className="border border-neutral-300/20 rounded-md px-1.75 py-0.75">
+                  TMDB API
+                </span>
+                <span className="border border-neutral-300/20 rounded-md px-1.75 py-0.75">
+                  Google Gemini API
+                </span>
+              </div>
+            </div>
+
+            <div className="sm:w-60 w-auto shrink-0 self-stretch rounded-r-md overflow-hidden">
+              <Image
+                src="/NextWatch Screenshot.png"
+                alt="NextWatch Screenshot"
+                className="object-cover object-top h-full w-full"
+                height={500}
+                width={500}
+                unoptimized
+              />
+            </div>
+          </div>
+        </section>
+
+        <div className="my-40" />
+
+        <section id="technical-skills">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+            Technical Skills
+          </h1>
+          <br />
+          <p className="md:text-lg font-light text-secondary"></p>
+        </section>
+
+        <div className="my-40" />
+
+        <section id="education" className="mb-20">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+            Education
+          </h1>
+          <br />
+        </section>
+      </div>
     </div>
   );
 }
