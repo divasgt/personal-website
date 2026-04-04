@@ -1,5 +1,6 @@
 import Project from "@/components/Project";
 import { projects } from "@/data/projects";
+import TechnicalSkills from "@/components/TechnicalSkills";
 
 export default function Home() {
 
@@ -40,11 +41,10 @@ export default function Home() {
         <div className="my-40" />
 
         <section id="technical-skills">
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-10">
             Technical Skills
           </h1>
-          <br />
-          <p className="md:text-lg font-light text-secondary"></p>
+          <TechnicalSkills />
         </section>
 
         <div className="my-40" />
