@@ -27,6 +27,20 @@ export const projects = [
     ],
     liveLink: "https://zenstation.netlify.app",
     githubLink: "https://github.com/divasgt/zenstation",
-    imageSrc: "/Zen_Station-screenshot.png",
+    imageSrc: "/zenstation-screenshot.png",
+  },
+  {
+    title: "Dhruva Astronomy Club's Website",
+    description: "A website frontend I made for Dhruva Astronomy Club.",
+    techStack: [
+      "Next.js",
+      "React.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "CSS"
+    ],
+    liveLink: "https://assignment-enxtai-divasgt.vercel.app/",
+    githubLink: "https://github.com/divasgt/dhruva-astronomy-club-website",
+    imageSrc: "/dhruva-astronomy-club-website-screenshot.png",
   }
 ];
