@@ -1,30 +1,17 @@
+import ContactLinks from "@/components/ContactLinks";
+
 export default function ContactPage() {
   return (
-    <main className="container mx-auto px-5 pt-10">
-      <div className="">
-        <h2>Contact me</h2>
-        Feel free to reach out. I'm happy to help :
-
+    <div className="flex flex-col items-center pt-20 mx-5">
+      <div className="w-full max-w-lg md:max-w-2xl">
+        <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
+          Contact
+        </h1>
+        <p className="text-secondary md:text-lg mb-12">
+          I love meeting new people. Feel free to reach out {":)"}
+        </p>
+        <ContactLinks />
       </div>
-
-      <div className="">
-        <div>
-          Email: 
-          <a href="mailto:divasverma18@gmail.com" target="_blank">divasverma18@gmail.com</a>
-        </div>
-        <div>
-          Linkedin: 
-          <a href="https://linkedin.com/in/divas-verma" target="_blank" rel="noopener noreferrer">linkedin.com/in/divas-verma</a>
-        </div>
-        <div>X (Twitter):
-          <a href="http://x.com/savidv2" target="_blank" rel="noopener noreferrer">x.com/savidv2</a>
-        </div>
-        <div>
-          Github: 
-          <a href="http://github.com/divasgt" target="_blank" rel="noopener noreferrer">github.com/divasgt</a>
-        </div>
-
-      </div>
-    </main>
-  )
+    </div>
+  );
 }

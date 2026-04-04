@@ -2,6 +2,7 @@ import Project from "@/components/Project";
 import { projects } from "@/data/projects";
 import TechnicalSkills from "@/components/TechnicalSkills";
 import Education from "@/components/Education";
+import ContactLinks from "@/components/ContactLinks";
 
 export default function Home() {
   return (
@@ -54,6 +55,18 @@ export default function Home() {
             Education
           </h1>
           <Education />
+        </section>
+
+        <div className="my-40" />
+
+        <section id="contact" className="mb-20">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
+            Contact
+          </h1>
+          <p className="text-secondary md:text-lg mb-12">
+            I love meeting new people. Feel free to reach out {":)"}
+          </p>
+          <ContactLinks />
         </section>
       </div>
     </div>
