@@ -2,8 +2,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
-export default function NavBar() {
+export default function Header() {
   const pathName = usePathname();
   const [scrolled, setScrolled] = useState(false);
 
@@ -24,19 +25,29 @@ export default function NavBar() {
 
   return (
     <header
-      className={`flex justify-center mx-2 py-5 sticky mt-4 top-0 z-100 bg-background`}
+      className={`flex justify-center mx-2 sm:mx-6 py-4 sticky top-0 z-100 bg-background ${scrolled ? "border-b border-neutral-500/30" : "border-b border-transparent"}`}
     >
-      <nav className="flex justify-between gap-10 px-0.5 text-nowrap text-shadow-foreground sm:">
+      <nav className="space-x-10 px-0.5 text-nowrap">
         <Link href={"/"} className={linkClassName("/")}>
           home
         </Link>
-        <Link href={"/good-stuff"} className={linkClassName("/good-stuff")}>
+        <Link href={"/about"} className={linkClassName("/about")}>
+          about
+        </Link>
+        <Link
+          href={"/good-stuff"}
+          className={linkClassName("/good-stuff") + "text-orange-400"}
+        >
           good stuff
         </Link>
         <Link href={"/contact"} className={linkClassName("/contact")}>
           contact
         </Link>
       </nav>
+
+      <div className="absolute right-4 top-1/2 -translate-y-1/2">
+        <ThemeToggle />
+      </div>
     </header>
   );
 }

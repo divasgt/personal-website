@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* This tells Tailwind to apply dark: classes when the .dark class is present */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
