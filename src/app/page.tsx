@@ -1,6 +1,7 @@
 import Project from "@/components/Project";
 import { projects } from "@/data/projects";
 import TechnicalSkills from "@/components/TechnicalSkills";
+import Education from "@/components/Education";
 
 export default function Home() {
   return (
@@ -49,10 +50,10 @@ export default function Home() {
         <div className="my-40" />
 
         <section id="education" className="mb-20">
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-10">
             Education
           </h1>
-          <br />
+          <Education />
         </section>
       </div>
     </div>
