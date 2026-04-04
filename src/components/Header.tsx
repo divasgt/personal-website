@@ -25,9 +25,9 @@ export default function Header() {
 
   return (
     <header
-      className={`flex justify-center py-3.5  mx-2 sm:mx-6 sticky top-0 z-100 bg-background ${scrolled ? "border-b border-neutral-500/30" : "border-b border-transparent"}`}
+      className={`flex justify-center py-3.5 mx-2 sm:mx-6 sticky top-0 z-100 bg-background ${scrolled ? "border-b border-neutral-500/30" : "border-b border-transparent"}`}
     >
-      <nav className="space-x-10 px-0.5 text-nowrap">
+      <nav className="space-x-5 sm:space-x-10 px-0.5 text-nowrap">
         <Link href={"/"} className={linkClassName("/")}>
           home
         </Link>
