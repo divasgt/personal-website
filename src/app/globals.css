@@ -12,12 +12,10 @@
   --secondary: var(--color-neutral-700);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--color-neutral-900);
-    --foreground: var(--color-neutral-100);
-    --secondary: var(--color-neutral-300);
-  }
+.dark {
+  --background: var(--color-neutral-900);
+  --foreground: var(--color-neutral-100);
+  --secondary: var(--color-neutral-300);
 }
 
 body {
