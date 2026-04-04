@@ -7,18 +7,21 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
 }
 
 :root {
   --background: var(--color-neutral-100);
   --foreground: var(--color-neutral-900);
   --secondary: var(--color-neutral-700);
+  --tertiary: var(--color-neutral-500);
 }
 
 .dark {
   --background: var(--color-neutral-900);
   --foreground: var(--color-neutral-100);
   --secondary: var(--color-neutral-300);
+  --tertiary: var(--color-neutral-500);
 }
 
 body {

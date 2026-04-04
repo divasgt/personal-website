@@ -21,11 +21,11 @@ export default function Header() {
   }, []);
 
   const linkClassName = (path: string) =>
-    `${path === pathName ? "text-foreground font-medium" : "text-neutral-500"} hover:text-foreground`;
+    `${path === pathName ? "text-foreground font-medium" : "text-tertiary"} hover:text-foreground`;
 
   return (
     <header
-      className={`flex justify-center mx-2 sm:mx-6 py-4 sticky top-0 z-100 bg-background ${scrolled ? "border-b border-neutral-500/30" : "border-b border-transparent"}`}
+      className={`flex justify-center py-3.5  mx-2 sm:mx-6 sticky top-0 z-100 bg-background ${scrolled ? "border-b border-neutral-500/30" : "border-b border-transparent"}`}
     >
       <nav className="space-x-10 px-0.5 text-nowrap">
         <Link href={"/"} className={linkClassName("/")}>
@@ -36,7 +36,11 @@ export default function Header() {
         </Link>
         <Link
           href={"/good-stuff"}
-          className={linkClassName("/good-stuff") + "text-orange-400"}
+          className={
+            pathName === "/good-stuff"
+              ? "text-orange-400 font-medium"
+              : "text-orange-400/70 hover:text-orange-400"
+          }
         >
           good stuff
         </Link>
@@ -45,7 +49,7 @@ export default function Header() {
         </Link>
       </nav>
 
-      <div className="absolute right-4 top-1/2 -translate-y-1/2">
+      <div className="absolute right-3 top-1/2 -translate-y-1/2">
         <ThemeToggle />
       </div>
     </header>
