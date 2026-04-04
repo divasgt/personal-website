@@ -22,10 +22,10 @@ export default function Project({
   return (
     <Link
       href={liveLink}
-      className="bg-neutral-500/10 hover:bg-neutral-500/15 transition-colors duration-100 border border-neutral-500/20 hover:border-neutral-500/40 rounded-md flex flex-col md:flex-row justify-between items-center gap-2"
+      className="bg-neutral-500/10 hover:bg-neutral-500/15 transition-colors duration-100 border border-neutral-500/20 hover:border-neutral-500/40 rounded-md flex flex-col items-start md:flex-row justify-between md:items-center gap-2"
     >
-      <div className="px-5 py-4 space-y-3">
-        <div className="flex justify-between items-center gap-2.5">
+      <div className="px-5 py-4 space-y-3 self-stretch">
+        <div className="flex justify-between items-center">
           <h2 className="text-lg md:text-xl font-semibold tracking-tight">
             {title}
           </h2>
@@ -64,7 +64,7 @@ export default function Project({
         </div>
         <p className="text-secondary text-sm md:text-base">{description}</p>
 
-        <div className="text-secondary text-xs md:text-sm font-light flex flex-wrap gap-2 select-none">
+        <div className="text-secondary text-sm font-light flex flex-wrap gap-2 select-none">
           {techStack.map((tech) => (
             <span className="rounded-md px-1.75 py-0.75 border border-neutral-500/30 dark:border-neutral-400/30">
               {/* hover:border-neutral-500/40 dark:hover:border-neutral-400/60 transition-colors duration-100 */}

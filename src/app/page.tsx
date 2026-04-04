@@ -3,7 +3,6 @@ import { projects } from "@/data/projects";
 import TechnicalSkills from "@/components/TechnicalSkills";
 
 export default function Home() {
-
   return (
     <div className="min-h-screen flex flex-col items-center pt-20 mx-5">
       <div className="max-w-lg md:max-w-2xl">
@@ -31,7 +30,7 @@ export default function Home() {
             Projects
           </h1>
 
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-10">
             {projects.map((project) => (
               <Project key={project.title} {...project} />
             ))}
