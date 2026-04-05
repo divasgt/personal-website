@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Providers } from "./providers";
 import { Analytics } from "@vercel/analytics/next";
+import PerlinWormsBackground from "@/components/PerlinWormsBackground";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         className={`${inter.className} antialiased bg-background text-foreground`}
       >
         <Providers>
+          <PerlinWormsBackground />
           <div className="min-h-screen flex flex-col selection:bg-secondary/30 selection:text-foreground">
             <Header />
             <main className="flex-1">{children}</main>
