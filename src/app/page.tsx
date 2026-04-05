@@ -60,10 +60,10 @@ export default function Home() {
         <div className="my-40" />
 
         <section id="contact" className="mb-20">
-          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-8">
             Contact
           </h1>
-          <p className="text-secondary md:text-lg mb-12">
+          <p className="text-secondary md:text-lg mb-6">
             I love meeting new people. Feel free to reach out {":)"}
           </p>
           <ContactLinks />

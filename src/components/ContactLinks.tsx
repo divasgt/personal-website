@@ -54,7 +54,7 @@ export default function ContactLinks() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       {links.map(({ label, href, text, icon: Icon, isEmail }) => (
         <div key={label} className="flex items-center gap-3">
           <a
