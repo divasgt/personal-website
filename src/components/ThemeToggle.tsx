@@ -65,14 +65,14 @@ export default function ThemeToggle() {
     <div className="group relative">
       <button
         onClick={handleClick}
-        className="flex cursor-pointer items-center justify-center p-1 opacity-40 transition-opacity duration-100 hover:opacity-80"
+        className="flex cursor-pointer items-center justify-center p-1 opacity-60 transition-opacity duration-100 hover:opacity-100"
         aria-label="Theme toggle button."
       >
         {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
       </button>
 
       {/* Tooltip */}
-      <span className="pointer-events-none absolute right-full mr-2 top-1/2 -translate-y-1/2 text-sm font-light opacity-0 transition-opacity duration-100 md:group-hover:opacity-100 text-neutral-500">
+      <span className="pointer-events-none absolute bottom-full mb-1 right-0.75 text-xs font-light opacity-0 transition-opacity duration-100 group-hover:opacity-100 text-neutral-500">
         {theme || "system"}
       </span>
     </div>

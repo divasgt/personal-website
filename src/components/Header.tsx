@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const pathName = usePathname();
@@ -48,10 +47,6 @@ export default function Header() {
           contact
         </Link>
       </nav>
-
-      <div className="absolute right-3 top-1/2 -translate-y-1/2">
-        <ThemeToggle />
-      </div>
     </header>
   );
 }
