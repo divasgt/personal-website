@@ -27,7 +27,7 @@ export default function RootLayout({
         className={`${inter.className} antialiased bg-background text-foreground`}
       >
         <Providers>
-          <div className="min-h-screen flex flex-col">
+          <div className="min-h-screen flex flex-col selection:bg-secondary/30 selection:text-foreground">
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
