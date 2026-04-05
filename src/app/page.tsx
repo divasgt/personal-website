@@ -3,7 +3,28 @@ import { projects } from "@/data/projects";
 import TechnicalSkills from "@/components/TechnicalSkills";
 import Education from "@/components/Education";
 import ContactLinks from "@/components/ContactLinks";
+import { contactLinks, ContactLink } from "@/data/links";
 
+function InlineContactLink({
+  link,
+  text,
+}: {
+  link: ContactLink;
+  text?: string;
+}) {
+  const Icon = link.icon;
+  return (
+    <a
+      href={link.href}
+      target={link.type === "email" ? undefined : "_blank"}
+      rel={link.type === "email" ? undefined : "noopener noreferrer"}
+      className="inline-flex items-center gap-1.5 ml-1 translate-y-0.5 font-medium text-secondary hover:text-foreground underline underline-offset-4 decoration-secondary/30 hover:decoration-foreground transition-all duration-100"
+    >
+      <Icon size={15} className="shrink-0 mt-0.5" />
+      {text || link.label}
+    </a>
+  );
+}
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center pt-20 mx-5">
@@ -13,15 +34,25 @@ export default function Home() {
             Hi, I'm Divas Verma
           </h1>
           <p className="md:text-lg text-secondary">
-            I'm a full-stack web developer based in Delhi NCR, India. <br /> I
-            enjoy building clean, minimal web interfaces that actually feel good
-            to use.
-            <br /> I recently graduated with a bachelors degree in computer
-            science from MAIT, Delhi in May 2025.
+            I'm a Full Stack web developer based in Delhi NCR, India. <br /> I
+            enjoy building websites with focus on clarity, usability, and
+            performance.
             <br /> <br />
-            My goal is to use my technical skills to build projects which have
-            real world impact in solving problems, making lives better and
-            reduce suffering from this world.
+            My goal is to use my technical skills to build projects with
+            real-world impact that solve problems, improve lives, and reduce
+            suffering.
+            <br /> <br />
+            Other than work, I like to gain knowledge, read great books, see
+            latest tech stuff on X, watch youtube, do calisthenics, and play
+            badminton.
+            <br />
+            <br />
+            Open for freelance or full-time work, and always open to meet new
+            people. <br />
+            Reach out via <InlineContactLink
+              link={contactLinks["Email"]}
+            />, <InlineContactLink link={contactLinks["LinkedIn"]} />, or{" "}
+            <InlineContactLink link={contactLinks["X"]} text="dms" />.
           </p>
         </section>
 
