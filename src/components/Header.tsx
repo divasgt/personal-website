@@ -25,9 +25,9 @@ export default function Header() {
     `${path === pathName ? "text-foreground font-medium" : "text-tertiary"} hover:text-foreground`;
 
   return (
-    <header className="sticky top-0 z-100 bg-background mx-2 sm:mx-6">
+    <header className="sticky top-0 z-50 mx-2 sm:mx-6">
       <div
-        className={`flex justify-center py-3.5 mx-auto max-w-xl md:max-w-3xl w-full`}
+        className={`bg-background flex justify-center py-3.5 mx-auto max-w-lg md:max-w-2xl w-full`}
       >
         <nav className="space-x-5 sm:space-x-10 px-0.5 text-nowrap">
           <Link href={"/"} className={linkClassName("/")}>

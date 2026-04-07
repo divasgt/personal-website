@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import { Providers } from "./providers";
 import { Analytics } from "@vercel/analytics/next";
+import StarfieldBackground from "@/components/StarfieldBackground";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,10 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.className} antialiased bg-background text-foreground`}
-      >
+      <body className={`${inter.className} antialiased text-foreground`}>
         <Providers>
+          <StarfieldBackground />
           <div className="min-h-screen flex flex-col selection:bg-secondary/30 selection:text-foreground">
             {/* <Header /> */}
             <main className="flex-1">{children}</main>

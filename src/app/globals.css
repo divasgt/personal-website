@@ -18,7 +18,7 @@
 }
 
 .dark {
-  --background: var(--color-neutral-900);
+  --background: #050505;
   --foreground: var(--color-neutral-100);
   --secondary: var(--color-neutral-300);
   --tertiary: var(--color-neutral-500);
