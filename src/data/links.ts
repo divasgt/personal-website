@@ -42,7 +42,7 @@ export const contactLinks: Record<string, ContactLink> = {
   },
   Resume: {
     label: "Resume",
-    href: "https://drive.google.com/file/d/1-zK_5LXBppN9kXo3wTNx3c8uW7RTzQNA/view?usp=sharing",
+    href: "https://drive.google.com/drive/folders/1FKUQBae3dFZlgTytD_zLW-512QLz0h5m?usp=sharing",
     text: "Resume",
     icon: FiFileText,
     type: "other",
