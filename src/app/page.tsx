@@ -25,9 +25,10 @@ function InlineContactLink({
     </a>
   );
 }
+
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center pt-20 mx-5">
+    <div className="min-h-screen flex flex-col items-center pt-20 sm:pt-30 mx-5">
       <div className="max-w-lg md:max-w-2xl">
         <section id="about">
           <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-8">
@@ -48,7 +49,7 @@ export default function Home() {
             <br />
             <br />
             Open for freelance or full-time work, and always open to meet new
-            people. <br />
+            people {":)"} <br />
             Reach out via <InlineContactLink
               link={contactLinks["Email"]}
             />, <InlineContactLink link={contactLinks["LinkedIn"]} />, or{" "}
