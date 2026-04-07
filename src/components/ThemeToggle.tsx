@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
 const SunIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="15"
-    height="15"
+    width="16"
+    height="16"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    strokeWidth="1.5"
+    strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
     aria-hidden="true"
@@ -31,12 +31,12 @@ const SunIcon = () => (
 const MoonIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="15"
-    height="15"
+    width="16"
+    height="16"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    strokeWidth="1.5"
+    strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
     aria-hidden="true"
@@ -65,14 +65,14 @@ export default function ThemeToggle() {
     <div className="group relative">
       <button
         onClick={handleClick}
-        className="flex cursor-pointer items-center justify-center p-1 opacity-60 transition-opacity duration-100 hover:opacity-100"
+        className="flex cursor-pointer items-center justify-center p-1 opacity-70 transition-opacity duration-100 hover:opacity-100"
         aria-label="Theme toggle button."
       >
         {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
       </button>
 
       {/* Tooltip */}
-      <span className="pointer-events-none absolute bottom-full mb-1 right-0.75 text-xs font-light opacity-0 transition-opacity duration-100 group-hover:opacity-100 text-neutral-500">
+      <span className="pointer-events-none absolute bottom-full mb-1 right-0.75 text-xs opacity-0 transition-opacity duration-100 group-hover:opacity-100 text-tertiary tracking-wide">
         {theme || "system"}
       </span>
     </div>

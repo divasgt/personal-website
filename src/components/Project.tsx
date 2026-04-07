@@ -21,7 +21,7 @@ export default function Project({
   return (
     <div
       onClick={() => window.open(liveLink, "_blank")}
-      className="bg-neutral-500/10 hover:bg-neutral-500/15 transition-colors duration-100 border border-neutral-500/20 hover:border-neutral-500/40 rounded-md flex flex-col items-start md:flex-row justify-between md:items-center gap-2"
+      className="bg-neutral-400/10 hover:bg-neutral-400/15 dark:bg-neutral-500/10 dark:hover:bg-neutral-500/15 transition-colors duration-100 border border-neutral-500/10 hover:border-neutral-500/30 rounded-md flex flex-col items-start md:flex-row justify-between md:items-center gap-2 cursor-pointer"
     >
       <div className="px-5 py-4 space-y-3 self-stretch">
         <div className="flex justify-between items-center">
