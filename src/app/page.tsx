@@ -32,11 +32,11 @@ export default function Home() {
       <div className="max-w-lg md:max-w-2xl *:scroll-mt-20 md:*:scroll-mt-30 ">
         <section id="about">
           <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-8">
-            Hi, I'm Divas Verma
+            {"Hi, I'm Divas Verma"}
           </h1>
           <p className="md:text-lg text-secondary">
-            I'm a Full Stack web developer based in Delhi NCR, India. <br /> I
-            enjoy building websites with focus on clarity, usability, and
+            {"I'm a Full Stack web developer based in Delhi NCR, India."} <br />{" "}
+            I enjoy building websites with focus on clarity, usability, and
             performance.
             <br /> <br />
             My goal is to use my technical skills to build projects with
