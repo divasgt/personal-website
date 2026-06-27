@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import Header from "@/components/Header";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Providers } from "./providers";
 import { Analytics } from "@vercel/analytics/next";
@@ -23,12 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.className} antialiased text-foreground`}>
         <Providers>
           <StarfieldBackground />
           <div className="min-h-screen flex flex-col selection:bg-secondary/30 selection:text-foreground">
-            {/* <Header /> */}
+            <Header />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>

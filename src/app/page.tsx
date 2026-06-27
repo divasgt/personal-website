@@ -29,7 +29,7 @@ function InlineContactLink({
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center pt-20 sm:pt-30 mx-5">
-      <div className="max-w-lg md:max-w-2xl">
+      <div className="max-w-lg md:max-w-2xl *:scroll-mt-20 md:*:scroll-mt-30 ">
         <section id="about">
           <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-8">
             Hi, I'm Divas Verma
@@ -73,7 +73,7 @@ export default function Home() {
 
         <div className="my-40" />
 
-        <section id="technical-skills">
+        <section id="skills">
           <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-10">
             Technical Skills
           </h1>
