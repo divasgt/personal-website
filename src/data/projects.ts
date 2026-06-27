@@ -1,5 +1,21 @@
 export const projects = [
   {
+    title: "DevForge",
+    description:
+      "Forge connections. Build projects. DevForge is the premier network to showcase yourself, discover like-minded engineers, and collaborate on your next great idea.",
+    techStack: [
+      "React.js",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Redux",
+    ],
+    liveLink: "https://dev-forge-app.vercel.app",
+    githubLink: "https://github.com/divasgt/DevForge-backend",
+    imageSrc: "/images/projects/devforge-screenshot.png",
+  },
+  {
     title: "NextWatch",
     description:
       "One-Stop website for Cinema Enthusiasts, featuring AI-powered chat and recommendations.",
@@ -12,9 +28,9 @@ export const projects = [
       "TMDB API",
       "Google Gemini API",
     ],
-    liveLink: "https://nextwatch-app.vercel.app/",
+    liveLink: "https://nextwatch-app.vercel.app",
     githubLink: "https://github.com/divasgt/nextwatch",
-    imageSrc: "/NextWatch-screenshot.png",
+    imageSrc: "/images/projects/nextwatch-screenshot.png",
   },
   {
     title: "Zen Station",
@@ -27,7 +43,7 @@ export const projects = [
     ],
     liveLink: "https://zenstation.netlify.app",
     githubLink: "https://github.com/divasgt/zenstation",
-    imageSrc: "/zenstation-screenshot.png",
+    imageSrc: "/images/projects/zenstation-screenshot.png",
   },
   {
     title: "Dhruva Astronomy Club's Website",
@@ -39,8 +55,8 @@ export const projects = [
       "Tailwind CSS",
       "CSS"
     ],
-    liveLink: "https://assignment-enxtai-divasgt.vercel.app/",
+    liveLink: "https://assignment-enxtai-divasgt.vercel.app",
     githubLink: "https://github.com/divasgt/dhruva-astronomy-club-website",
-    imageSrc: "/dhruva-astronomy-club-website-screenshot.png",
+    imageSrc: "/images/projects/dhruva-astronomy-club-screenshot.png",
   }
 ];

@@ -80,9 +80,9 @@ export const skillCategories: SkillCategory[] = [
       { label: "MySQL", icon: SiMysql },
       { label: "Firebase", icon: SiFirebase },
       { label: "Supabase", icon: SiSupabase },
-      { label: "Nodemailer" },
-      { label: "Multer" },
-      { label: "Cloudinary", icon: SiCloudinary },
+      // { label: "Nodemailer" },
+      // { label: "Multer" },
+      // { label: "Cloudinary", icon: SiCloudinary },
     ],
   },
   {
@@ -91,7 +91,7 @@ export const skillCategories: SkillCategory[] = [
       { label: "Redux", icon: SiRedux },
       { label: "Redux Toolkit", icon: SiRedux },
       { label: "Zustand" },
-      { label: "Context API", icon: SiReact },
+      // { label: "Context API", icon: SiReact },
     ],
   },
   {
@@ -113,7 +113,9 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { label: "Generative AI / LLMs", icon: TbBrain },
       { label: "Prompt Engineering", icon: TbBrain },
-      { label: "Structured JSON Parsing" },
+      { label: "Cursor IDE" },
+      { label: "Claude Code" },
+      { label: "Codex" },
     ],
   },
 ];
